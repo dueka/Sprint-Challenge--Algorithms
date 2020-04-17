@@ -112,7 +112,6 @@ class SortingRobot:
                     self.swap_item()
                     self.move_left()
                     self.swap_item()
-                    self.set_light_off()
                 else:
                     self.move_left()
                     self.swap_item()
@@ -125,9 +124,8 @@ class SortingRobot:
             # If can move left
             while self.can_move_left():
                 self.move_left()
+
                 # self.swap_item()
-
-
 if __name__ == "__main__":
     # Test our your implementation from the command line
     # with `python robot_sort.py`
